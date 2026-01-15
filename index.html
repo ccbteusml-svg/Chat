@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Fantasma PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <div id="login-screen">
+        <h1>👻 Chat Fantasma</h1>
+        <p>Nada fica salvo. Apagou, sumiu.</p>
+        <input type="text" id="username" placeholder="Seu Apelido">
+        <input type="text" id="room" placeholder="Nome da Sala Secreta">
+        <button onclick="entrarNoChat()">Entrar na Sala</button>
+    </div>
+
+    <div id="chat-screen" class="hidden">
+        <div id="header">
+            <span id="room-display">Sala: ...</span>
+            <button onclick="sairDoChat()" class="btn-exit">Sair (Apagar)</button>
+        </div>
+        
+        <div id="messages">
+            </div>
+
+        <div id="input-area">
+            <input type="text" id="msg-input" placeholder="Digite algo...">
+            <button onclick="enviarMensagem()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

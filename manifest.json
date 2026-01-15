@@ -1,0 +1,15 @@
+{
+  "name": "Chat Fantasma",
+  "short_name": "GhostChat",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#00C853",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/1041/1041916.png", 
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
